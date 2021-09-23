@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Site's Info -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel-To</title>
+    <!-- GOOGLE FONTS (Varela Round, Roboto)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME (FOR ICONS) -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- MAIN SECTION -->
+    <main id="home">
+      <!-- MAIN SECTION/NAVIGATION BAR -->
+      <nav>
+        <div class="navBarWrapper">
+          <div class="logo">
+            <h1>TRAVELTO.</h1>
+          </div>
+          <ul class="navBarContainer">
+            <li class="navItem">
+              <a href="#" class="navLink" data-section="explore">Explore</a>
+            </li>
+            <li class="navItem">
+              <a href="#memories" class="navLink" data-section="discover"
+                >Discover</a
+              >
+            </li>
+            <li class="navItem">
+              <a href="#packages" class="navLink" data-section="packages"
+                >Tour Packages</a
+              >
+            </li>
+
+            <li class="navItem toRight">
+              <a href="#" class="navLink" data-section="contact">Contact</a>
+            </li>
+          </ul>
+          <div class="navTogglers">
+            <i id="openMenu" class="fas fa-bars navToggle"></i>
+            <i id="closeMenu" class="fas fa-times navToggle hide"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- HERO TEXT AND CALL TO ACTION BUTTONS -->
+      <div class="mainContentWrapper">
+        <div class="innerContainer">
+          <h1>
+            World <br />
+            OF <span class="headerHighlight">PARADISE</span>, <br />
+            LEBANON
+          </h1>
+          <p>
+            Let’s explore the country that never sleeps! We help people discover
+            Lebanon’s history, culture, and have unforgettable experiences while
+            they’re at it. <br /><br />
+            Enjoy three vacation packages at the most competitive prices in the
+            market.
+          </p>
+          <div class="mainCtmBtns">
+            <button class="offers">PACKAGES</button>
+            <button class="contact">CONTACT</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- MEMORIES SECTION -->
+    <section id="memories" class="memories">
+      <h1 class="sectionHeader">Memories that will last a lifetime</h1>
+      <div class="cardWrapper">
+        <div class="card cardOne">
+          <div class="cardInfo">
+            <h1>Lovely Beaches</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+          <img src="image/memories/beach.jpg" alt="Lebanese Beach" />
+        </div>
+        <div class="card cardTwo">
+          <img src="image/memories/rawshe.jpg" />
+          <div class="cardInfo">
+            <h1>Lovely Beaches</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="offers">PACKAGES</button>
+    </section>
+
+    <!-- DISCOUNT -->
+    <section class="discount">
+      <h1>DISCOUNTS UP TO <span>10-30% OFF</span></h1>
+      <p>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It
+        has roots in a piece of classical Latin literature from 45 BC, making it
+        over 2000 years old. Richard McClintock, a Latin professor at
+        Hampden-Sydney College in Virginia, looked up one of the more obscure
+        Latin words, consectetur, from a Lorem Ipsum passage, and going through
+        the cites of the word in classical literature, discovered the
+        undoubtable source.
+      </p>
+    </section>
+
+    <!-- Accomplishments -->
+    <section class="accomplishments">
+      <div class="mCard">
+        <img src="image/accomplishments/navigation.png" alt="navigation" />
+        <p class="count">200+</p>
+        <p class="title">COSTUM PLANS</p>
+      </div>
+      <div class="mCard">
+        <img src="image/accomplishments/smile.png" alt="navigation" />
+        <p class="count">3000+</p>
+        <p class="title">SATISFIED CLIENTS</p>
+      </div>
+      <div class="mCard">
+        <img src="image/accomplishments/trophy.png" alt="navigation" />
+        <p class="count">12</p>
+        <p class="title">AWARDS</p>
+      </div>
+    </section>
+    <!-- PACKAGES -->
+    <section id="packages" class="packages">
+      <h1 class="sectionHeader">Tour Packages</h1>
+
+      <div class="pCardWrapper">
+        <div class="slider">
+          <div class="pCard">
+            <div class="bg destinationOne"></div>
+            <div class="pCardInfo">
+              <div class="plan">
+                <h1>Plan One</h1>
+                <div class="rating">
+                  <img src="image/packages/star.png" alt="Rating" />
+                  <img src="image/packages/star.png" alt="Rating" />
+                  <img src="image/packages/star.png" alt="Rating" />
+                  <img src="image/packages/star.png" alt="Rating" />
+                  <img src="image/packages/star.png" alt="Rating" />
+                </div>
+              </div>
+              <div class="destination">
+                <h2>Destinations:</h2>
+                <ul class="destinationList">
+                  <li>Lorem Ipsum</li>
+                  <li>Lorem Ipsum</li>
+                  <li>Lorem Ipsum</li>
+                </ul>
+              </div>
+              <div class="about">
+                <h2>About</h2>
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur,
+                  from a Lorem Ipsum passage, and going through the cites of the
+                  word in classical literature, discovered the undoubtable
+                  source.
+                </p>
+              </div>
+              <button>BOOK NOW</button>
+            </div>
+          </div>
+          <div class="pCard">
+            <div class="bg destinationTwo"></div>
+            <div class="pCardInfo">
+              <div class="plan">
+                <h1>Plan Two</h1>
+                <div class="rating">
+                  <img src="image/packages/star.png" alt="Rating" />
+                  <img src="image/packages/star.png" alt="Rating" />
+                  <img src="image/packages/star.png" alt="Rating" />
+                  <img src="image/packages/star.png" alt="Rating" />
+                </div>
+              </div>
+              <div class="destination">
+                <h2>Destinations:</h2>
+                <ul class="destinationList">
+                  <li>Lorem Ipsum</li>
+                  <li>Lorem Ipsum</li>
+                  <li>Lorem Ipsum</li>
+                </ul>
+              </div>
+              <div class="about">
+                <h2>About</h2>
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur,
+                  from a Lorem Ipsum passage. source.
+                </p>
+              </div>
+              <button>BOOK NOW</button>
+            </div>
+          </div>
+          <div class="pCard">
+            <div class="bg destinationThree"></div>
+            <div class="pCardInfo">
+              <div class="plan">
+                <h1>Plan Three</h1>
+                <div class="rating">
+                  <img src="image/packages/star.png" alt="Rating" />
+                  <img src="image/packages/star.png" alt="Rating" />
+                  <img src="image/packages/star.png" alt="Rating" />
+                  <img src="image/packages/star.png" alt="Rating" />
+                  <img src="image/packages/star.png" alt="Rating" />
+                </div>
+              </div>
+              <div class="destination">
+                <h2>Destinations:</h2>
+                <ul class="destinationList">
+                  <li>Lorem Ipsum</li>
+                  <li>Lorem Ipsum</li>
+                  <li>Lorem Ipsum</li>
+                </ul>
+              </div>
+              <div class="about">
+                <h2>About</h2>
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College, literature,
+                  discovered the undoubtable. source.
+                </p>
+              </div>
+              <button>BOOK NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <div id="left">
+          <img src="image/packages/Arrow.png" alt="Go Left" />
+        </div>
+        <div id="right">
+          <img src="image/packages/Arrow.png" alt="Go Right" />
+        </div>
+      </div>
+    </section>
+    <section class="contactSection">
+      <a href="#">
+        <div class="backTop">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+      </a>
+      <div class="coderInfo">
+        <h1><span>Email</span> : AbNassif99@gmail.com</h1>
+        <p>
+          This is a simple static site created by me (<em
+            >Abdullah Bou Nassif</em
+          >). I used HTML, CSS, and javascript for all the functionality here
+          including the slider. No css frameworks were used like Tachyons and
+          bootstrap as my main purpose was to polish the fundamental skills
+          before diving back into node and react <br /><br />
+          If you stumbled upon this, thank you for your time! I still have
+          plenty of more complex projects to show, please feel free to check my
+          out my portfolio
+          <a class="portfolioLink" href="google.com"><bold>Here</bold></a> or
+          contact my email if you have any questions.
+        </p>
+      </div>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
