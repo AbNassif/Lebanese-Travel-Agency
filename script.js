@@ -7,6 +7,8 @@
 const openMenu = document.getElementById("openMenu");
 const closeMenu = document.getElementById("closeMenu");
 const menu = document.querySelector(".navBarContainer");
+const allNavLinks = document.querySelectorAll(".navLink");
+
 
 
 /*
@@ -34,11 +36,14 @@ function switchBetweentogglers(el1, el2, commonClassName) {
 
 openMenu.addEventListener("click", switchBetweentogglers.bind(this, openMenu, closeMenu, "hide"));
 closeMenu.addEventListener("click", switchBetweentogglers.bind(this, openMenu, closeMenu, "hide"));
-
+allNavLinks.forEach(item => {
+    item.addEventListener("click", switchBetweentogglers.bind(this, openMenu, closeMenu, "hide"));
+})
 
 /*************************************************************************************
                 Assign the menu link to the section it's at
 *************************************************************************************/
+
 
 let exploreSection = document.getElementById("home");
 let memoriesSection = document.getElementById("memories");
@@ -54,29 +59,34 @@ function markSection(sectionName) {
     })
 }
 
-window.addEventListener("scroll", () => {
-    
-let obj = {
-    exploreSection: exploreSection.getBoundingClientRect().top  - nav.clientHeight,
-    memoriesSection: memoriesSection.getBoundingClientRect().top  - nav.clientHeight ,
-    packagesSection: packagesSection.getBoundingClientRect().top - nav.clientHeight ,
+function AddMark() {
+    let navHeight = document.querySelector("nav").offsetHeight;
+    document.getElementById("html").style.scrollPaddingTop = `${navHeight - 1}px`;
+
+    let obj = {
+    exploreSection: exploreSection.getBoundingClientRect().top  - navHeight,
+        memoriesSection: memoriesSection.getBoundingClientRect().top - navHeight,
+    packagesSection: packagesSection.getBoundingClientRect().top - navHeight,
     contact: document.body.getBoundingClientRect().top
     }
     markSection("");
-    if (obj.memoriesSection > 0 && obj.packagesSection > 1) {
+    if (obj.memoriesSection > 0 && obj.packagesSection > 0) {
         markSection("explore");
-    }else if (obj.memoriesSection < 1 && obj.packagesSection >= 1) {
+    }else if (obj.memoriesSection <= 0 && obj.packagesSection > 0) {
         markSection("discover");
 
-    } else if (obj.packagesSection < 1 && obj.contact !== -window.scrollY) {
+    } else if (obj.packagesSection <= 0) {
         markSection("packages");
     }
-})
+}
+
+AddMark()
+window.addEventListener("scroll", AddMark);
 
 /*************************************************************************************
                         NAVIGATION BAR CHANGE COLOR BASED ON SCROLL
 *************************************************************************************/
-const nav = document.querySelector("nav");
+let nav = document.querySelector("nav");
 
 window.addEventListener("scroll", (e) => {
     if (window.scrollY === 0) {
