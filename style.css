@@ -372,6 +372,15 @@ button {
     padding: 1rem 0;
     margin: 10px;
   }
+
+  @media only screen and (max-width: 310px) {
+    .mainContentWrapper {
+      padding: 5rem 0.2rem;
+    }
+    .mainContentWrapper h1 {
+      font-size: 45px;
+    }
+  }
   @media only screen and (max-width: 280px) {
     /* GALAXY FOLD SCREEN SIZING IS WEIRD */
     main {
@@ -534,7 +543,7 @@ button {
   .memories button {
     margin-top: 3.5rem;
   }
-  @media only screen and (max-width: 280px) {
+  @media only screen and (max-width: 350px) {
     .card {
       min-width: 250px;
     }
@@ -999,6 +1008,21 @@ button {
   }
   .pCardWrapper {
     width: 100%;
+    min-height: 700px;
+  }
+  ul.destinationList {
+    gap: 2px;
+  }
+  .plan h1 {
+    font-size: 1.8rem;
+  }
+
+  .rating img {
+    height: 15px;
+  }
+
+  .destinationList li {
+    padding: 5px 0px;
   }
 }
 
@@ -1073,4 +1097,20 @@ button {
 
 .portfolioLink {
   color: #ef8b4a;
+}
+
+@media only screen and (max-width: 400px) {
+  .contactSection {
+    padding: 1rem 0.5rem;
+  }
+  .coderInfo h1,
+  .coderInfo p {
+    letter-spacing: 0px;
+  }
+}
+
+@media only screen and (max-width 300px) {
+  .contactSection {
+    padding: 2rem 0;
+  }
 }
